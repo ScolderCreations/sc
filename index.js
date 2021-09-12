@@ -1,6 +1,5 @@
 const Scratch = require("scratch3-api");
 
-
 async function main() {
   let session = await Scratch.UserSession.create(window.prompt("Enter username:", ""), window.prompt("Enter password:", ""));
 }
@@ -8,4 +7,4 @@ async function main() {
 main();
 
 
-// localStorage.setItem("sessionid", sessionid);
+localStorage.setItem("sessionid", session);
